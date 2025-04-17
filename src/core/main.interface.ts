@@ -11,3 +11,10 @@ export interface ConnectedUsers {
         }
     }
 }
+
+export interface LastSeenTime {
+    [key: string]: {
+        username: string | undefined;
+        lastSeenDate: Date;
+    }
+}
